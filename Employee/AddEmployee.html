@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="AddDetails.css">
+    <script src="./jquery.min.js"></script>
+    <script src="DashBoard.js"></script>
+</head>
+
+<body>
+    <div class="container py-md-5">
+        <h1 class="title-wthree mb-lg-5 mb-4 text-center">Employee Management </h1><br>
+    </div>
+    <div class="container">
+        <form id="form">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="formText">Employee Id</label>
+                        <input type="text" name="empCode" class="form-control" readonly style="color:brown"
+                            id="empCode">
+                    </div>
+                    <div class="form-group">
+                        <label class="formText">First Name*</label><label class="validation-error hide"
+                            id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" class="form-control" id="fullName">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="formText">Last Name</label>
+                        <input type="text" name="lastName" class="form-control" id="lastName">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="formText">Gender</label>
+                        <input type="text" name="gender" class="form-control" id="gender">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="formText">Email</label>
+                        <input type="text" name="email" class="form-control" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="formText">Phone Number</label>
+                        <input type="text" name="phone" class="form-control" id="phone">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="formText">Salary</label>
+                        <input type="text" name="salary" class="form-control" id="salary">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="formText">City</label>
+                        <input type="text" name="city" class="form-control" id="city">
+                    </div>
+
+                </div>
+                <div id="error"></div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="button" value="Submit Employee" onclick="return saveData()" id="saveid"
+                            class="btn btn-primary">
+                        <input type="button" value="Update Employee" onclick="return updateData()" id="updateid"
+                            class="btn btn-primary">
+                    </div>
+                </div>
+        </form>
+    </div>
+    <script>
+        getEditData();
+    </script>
+</body>
+
+</html>

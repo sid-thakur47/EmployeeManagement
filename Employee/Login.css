@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color:rgb(255, 255, 255);
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 200px;
+    display: block;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+}
+.login-form{
+    position: relative;
+    width:400px;
+    height: 300;
+    padding:20px 30px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 0 5px  #000;
+    margin: auto;
+    font-family: Arial,sans-serif;
+}
+
+.form-input{
+    border-radius: 5px;
+    background: #fafafa;
+    border: 1px solid #000000;
+    padding: 12px;
+    width: 100%;   
+}
+
+.form-group{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+.form-button{
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #ffffff;
+    background: #4bc6df;
+
+}
+
+.form-header{
+    font-family: Arial,sans-serif;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom : 2rem;
+}
+.form-footer{
+    text-align: center;
+}
+
+label, input {
+    display: block;
+}s
+
+label {
+    margin-bottom: 5px;
+}
+
+
+#error{
+    margin-bottom: 20px;
+    background: #f8f8f8;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    color:#ff0000;
+}
+
+.swal-wide{
+    width:20%;
+    height: 15%;
+    font-size: smaller;
+}
+
+.intl-tel-input {
+    display: table-cell;
+  }
+  .intl-tel-input .selected-flag {
+    z-index: 4;
+  }
+  .intl-tel-input .country-list {
+    z-index: 5;
+  }
+  .input-group .intl-tel-input .form-control {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 0;
+  }

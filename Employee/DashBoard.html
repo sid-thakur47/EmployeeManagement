@@ -1,0 +1,55 @@
+  
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>
+        Employee Management
+    </title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+ 
+    <script src="./jquery.min.js"></script>
+    <script src="DashBoard.js"></script>
+</head>
+
+<body >
+    <div class="container py-md-5">
+        <h1 class="title-wthree mb-lg-5 mb-4 text-center">Employee Management </h1>
+        <div class="row" style="float:right">
+        </div>
+    </div>
+
+    <div class="container">
+   
+    <div class="text-center">
+        <a href="AddEmployee.html" class="btn btn-primary" style="width:130px;height:40px;font-size:120%;">Add Employee</a>
+        </div><br>
+        <div class="table-responsive">
+                <table  id="employeeList" class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr style="font-size: auto">
+                            <th>Employee Id</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Gender</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>   
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            </div>   
+            
+           <script>
+            getEmplyeeDetails();
+        </script>      
+</body>
+</html>

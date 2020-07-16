@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <!-- css Link -->
+    <link rel="stylesheet" href="Registration.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="./Registration.js"></script>
+    <script src="./jquery.min.js"></script>
+</head>
+    <body>
+        <div id="image">
+          
+          </div>
+            <form class="registration-form"  id="form" name="myForm">
+                <div class="form-header">
+                    <h3>Registration</h3>
+                </div>
+                <!--First name-->
+                <div class="form-group">
+                    <label> First Name </label>
+                    <input type="text" id="firstname" name="firstname"class="form-input" placeholder="Enter First Name">
+                </div>
+
+                 <!--Last name-->
+                 <div class="form-group">
+                    <label> Last Name </label>
+                    <input type="text" id="lastname" name="lastname" class="form-input"placeholder="Enter Last Name">
+                </div>
+
+                  <!--email-->
+                  <div class="form-group">
+                    <label> Email </label>
+                    <input type="text" id="email" name="email"class="form-input"placeholder="Enter email">
+                </div>
+
+                <div class="form-group">
+                    <label> Mobile Number </label><br>
+                    
+                <!--Mobile number-->
+                <select style="padding: 5px 5px;"><br>
+                    <option>Ind +91</option>
+                    <option>+92</option>
+                    <option>+93</option>
+                    <option>+12</option>
+                    <input type="text" name="mobile" id="mobileNumber" class="form-input">
+                </select>
+                </div>
+        
+                <!--Password Input-->
+                <div class="form-group">
+                    <label> Password </label>
+                    <input type="password" class="form-input" name="password" id="password"placeholder="atleast 8 characters">
+                </div>
+
+                    <!--Repeat Password Input-->
+                <div class="form-group">
+                    <label>Re-Enter Password </label>
+                    <input type="password" class="form-input" name="repeate-pass" id="repeate-pass"placeholder="repeat password">
+                </div>
+
+                <!-- select gender -->
+                <div class="form-group">  
+                    <label> Gender:</label>
+                    <label class="radio" for="Male">Male</label>
+                    <input class="radio" id="Male" name="male" type="radio" value="male">
+                    <label class="radio" for="Female">Female</label>
+                    <input class="radio" id="Female" name="female" type="radio" value="female">
+                 </div>
+
+                <!--Login Button-->
+                <div id="error"></div>
+                <div class="form-group">
+                    <button class="form-button" type="button" onclick="validate()">Register</button>
+                </div>
+                
+                <div class="form-footer">
+                    Already have an account? <a href="./Login.html">Login</a>
+                </div>
+            </form>
+        </div>
+</body>
+</html>
